@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import './style.css'
+import './style.css';
+
 const SOList = () => {
   const [salesOrders, setSalesOrders] = useState([]);
   const navigate = useNavigate();
@@ -23,7 +24,7 @@ const SOList = () => {
   };
 
   return (
-    <div>
+    <div className="general-container so-list">
       <h1>Sales Orders List</h1>
       <table>
         <thead>

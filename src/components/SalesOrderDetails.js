@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams, Link } from 'react-router-dom';
-import './style.css'
+import './style.css';
 
 const SODetail = () => {
   const { so_id } = useParams();
@@ -22,7 +22,7 @@ const SODetail = () => {
   }, [so_id]);
 
   return (
-    <div>
+    <div className="general-container so-detail">
       <h1>Sales Order Details</h1>
       <h2>Customer Name: {customerName}</h2>
       <table>
@@ -51,7 +51,6 @@ const SODetail = () => {
       </table>
       <Link to="/" className="back-button">Back</Link>
     </div>
-    
   );
 };
 
