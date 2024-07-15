@@ -1,0 +1,121 @@
+.form-control {
+    display: flex;
+    justify-content: center; /* จัดเนื้อหาให้อยู่ตรงกลางแนวนอน */
+    align-items: center; /* จัดเนื้อหาให้อยู่ตรงกลางแนวตั้ง */
+  }
+.login-box {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(1, 1, 1, 0.2);
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+label[for="username"],[for="password"],[for="role"]  {
+    color: gray;
+    font-size: 15px;
+}
+@media (min-width: 350px) {
+    .login-box {
+        width: 350px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .login-box {
+        width: 750px;
+    }
+}
+
+.login-box h2 {
+    text-align: center;
+    margin: 0 0 20px;
+    background: linear-gradient(to left, #e98b59, #ff5900);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+
+.login-box label {
+    display: block;
+    margin-bottom: 5px;
+}
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    outline: none; /* เอากรอบออก */
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+    
+}
+.login-box input[type="text"]:hover,
+.login-box input[type="password"]:hover {
+    box-shadow: 0 0 10px rgba(1, 1, 1, 0.2);
+}
+.login-box .actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .login-box .actions a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+} */
+.login-box .actions a {
+    text-decoration: none;
+    color: #959595;
+    font-size: 14px;
+}
+
+/* .login-box .actions2 input[type="submit"]{
+    background: linear-gradient(to left, #87CEEB, #025ab8);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+} */
+.login-box .actions2 input[type="submit"]{
+    background: linear-gradient(to left, #e98b59, #ff5900);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* .actions2 input[type="submit"]:hover {
+    background: linear-gradient(to left, #025ab8, #87CEEB);
+    color: white; 
+} */
+ .actions2 input[type="submit"]:hover {
+    background: linear-gradient(to left, #ff5900, #e98b59);
+    color: white; 
+}
+
+.login-box select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.login-box select :hover {
+    box-shadow: 0 0 10px rgba(1, 1, 1, 0.2);
+}
+
+/* Add this CSS rule for the error message */
+.error-message {
+    color: red;
+    margin-top: 10px;
+    font-size: small;
+}
+
+
+/* width: calc(100% - 20px); */

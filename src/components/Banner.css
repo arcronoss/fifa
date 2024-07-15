@@ -1,0 +1,25 @@
+.body-banner {
+    position: relative; /* ต้องกำหนด position เป็น relative เพื่อให้ ::before pseudo-element สามารถมีตำแหน่งอยู่บนพื้นหลังได้ */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    /* background-image: url('C:\Login_react\login-ui\src\role_picture\drack.webp'); */
+    background-image: url(https://media1.tenor.com/m/IoGGQCa51ccAAAAd/orange.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+  }
+  
+.banner-banner {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-color: #efefef;
+}
+

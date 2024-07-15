@@ -1,0 +1,32 @@
+/* src/components/SalesOrderList.css */
+.sales-order-list {
+    margin-bottom: 0px;
+    display: flex;
+}
+
+.sales-order-list h3 {
+    margin-bottom: 0px;
+}
+
+.sales-order-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.sales-order-list th, .sales-order-list td {
+    padding: 15px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.sales-order-list th {
+    background-color: #000000;
+    color: #ffffff;
+}
+.sales-order-list tr{
+    background-color: #dadada;
+}
+.sales-order-list tr:hover {
+    background-color: #696868;
+    cursor: pointer;
+}
